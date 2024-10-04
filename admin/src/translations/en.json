@@ -1,0 +1,38 @@
+{
+  "name": "Logz",
+  "title": "Logz",
+  "description": "Automatically capture and record the API calls made to your Strapi application",
+  "home.cta.tooltip": "Click to download all logz",
+  "home.cta": "Download all logz",
+
+  "download": "Download",
+  "cancel": "Cancel",
+
+  "error": "Error",
+  "error.download": "An error occurred while downloading the logz",
+
+  "success": "Success",
+  "success.download": "Logz downloaded successfully",
+
+  "startDate.label": "Start Date",
+  "startDate.hint": "Select the start date",
+  "endDate.label": "End Date",
+  "endDate.hint": "Select the end date",
+
+  "stats.totalApiCalls": "Total API Calls",
+  "stats.totalLoginRequests": "Total Login Requests",
+  "stats.totalRegisterRequests": "Total Register Requests",
+  "stats.totalErrorRequests": "Total Error Requests",
+
+  "week": "Week",
+  "month": "Month",
+
+  "chart.apiRequestOverTime.title": "API Requests Over Time",
+  "chart.apiRequestOverTime.description": "Filter the API requests made to your Strapi application over the past {period}",
+
+  "chart.loginVsRegister.title": "Login vs Register",
+  "chart.loginVsRegister.description": "Compare the number of login and register requests over the past {period}",
+
+  "chart.mostAccessed.title": "Most Accessed Requests",
+  "chart.mostAccessed.description": "View the most accessed types of requests over the past {period}"
+}

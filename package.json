@@ -1,0 +1,98 @@
+{
+  "name": "strapi-plugin-logz",
+  "version": "0.0.0",
+  "description": "Automatically capture and record the API calls made to your Strapi application",
+  "keywords": [
+    "strapi",
+    "plugin",
+    "logz"
+  ],
+  "homepage": "https://github.com/BayBreezy/strapi-plugin-logz.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BayBreezy/strapi-plugin-logz.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Behon Baker",
+    "email": "behon.baker@yahoo.com",
+    "url": "https://behonbaker.com"
+  },
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "format": "npx prettier --write .",
+    "format:check": "npx prettier -c .",
+    "prepare": "husky",
+    "release": "npm run format && npm run build && npm run verify && changelogen --release && npm publish && git push --follow-tags",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json",
+    "test:ts:front": "run -T tsc -p admin/tsconfig.json",
+    "verify": "strapi-plugin verify",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.11",
+    "@strapi/icons": "^2.0.0-rc.11",
+    "dayjs": "^1.11.13",
+    "defu": "^6.1.4",
+    "file-saver": "^2.0.5",
+    "json-2-csv": "^5.5.6",
+    "react-intl": "^6.7.0",
+    "recharts": "^2.13.0-alpha.5",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+    "@iconify/react": "^5.0.2",
+    "@strapi/sdk-plugin": "^5.2.6",
+    "@strapi/strapi": "^5.0.2",
+    "@strapi/typescript-utils": "^5.0.2",
+    "@types/file-saver": "^2.0.7",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@types/styled-components": "^5.1.34",
+    "changelogen": "^0.5.7",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "styled-components": "^6.1.13",
+    "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.2.6",
+    "@strapi/strapi": "^5.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "styled-components": "^6.1.13"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "logz",
+    "displayName": "Logz",
+    "description": "Automatically capture and record the API calls made to your Strapi application"
+  }
+}
