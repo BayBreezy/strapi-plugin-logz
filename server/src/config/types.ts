@@ -24,4 +24,10 @@ export interface LogzConfig {
    *});
    */
   skipList: Array<string>;
+  /**
+   * Enter the list of endpoints to skip creating logs for
+   *
+   * @default []
+   */
+  skipEndpoints: Array<string>;
 }

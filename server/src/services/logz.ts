@@ -27,13 +27,20 @@ const service = ({ strapi }: { strapi: Core.Strapi }) => ({
     // get the current request context
     const ctx = strapi.requestContext.get();
     // get configuration
-    const configData: { skipList: Array<string> } = strapi.config.get(`plugin::${config.pluginName}`);
+    const configData: { skipList: Array<string>; skipEndpoints: Array<string> } = strapi.config.get(
+      `plugin::${config.pluginName}`
+    );
     // check if skipList is present in config
     // if it is, don't log the request
     if (
       configData.skipList &&
       configData.skipList.includes(ctx.state.route.info.apiName || ctx.state.route.info.pluginName)
     ) {
+      return;
+    }
+    // check if skipEndpoints is present in config
+    // if it is, don't log the request. Also check if the path has query params
+    if (configData.skipEndpoints && configData.skipEndpoints.includes(ctx.state.route.path)) {
       return;
     }
     // get the method, url, status from the context
