@@ -1,3 +1,5 @@
+<img src="/Logz Logo.png" style="height: 70px; margin: 0px; border-radius: 12px;" />
+
 # Strapi Plugin Logz
 
 Automatically capture and record the API calls made to your Strapi application
