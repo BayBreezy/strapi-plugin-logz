@@ -34,13 +34,13 @@ const service = ({ strapi }: { strapi: Core.Strapi }) => ({
     // if it is, don't log the request
     if (
       configData.skipList &&
-      configData.skipList.includes(ctx.state.route.info.apiName || ctx.state.route.info.pluginName)
+      configData.skipList.includes(ctx?.state?.route?.info?.apiName || ctx?.state?.route?.info?.pluginName)
     ) {
       return;
     }
     // check if skipEndpoints is present in config
     // if it is, don't log the request. Also check if the path has query params
-    if (configData.skipEndpoints && configData.skipEndpoints.includes(ctx.state.route.path)) {
+    if (configData.skipEndpoints && configData.skipEndpoints.includes(ctx.state?.route?.path)) {
       return;
     }
     // get the method, url, status from the context
@@ -49,7 +49,7 @@ const service = ({ strapi }: { strapi: Core.Strapi }) => ({
     const user = ctx.state.user ? ctx.state.user.id : null;
     // get the api name from the route info
     const apiName = startCase(
-      replace(ctx.state?.route.info?.apiName || ctx.state?.route.info?.pluginName, "-", " ")
+      replace(ctx.state?.route?.info?.apiName || ctx.state?.route?.info?.pluginName, "-", " ")
     );
     // set the action based on the method and api name
     let action = apiName ? `${startCase(method)} ${apiName}` : "Unknown";
@@ -89,7 +89,7 @@ const service = ({ strapi }: { strapi: Core.Strapi }) => ({
         ? {
             // @ts-expect-error
             data: `${ctx.response?.body?.data?.length || 0} record(s) fetched`,
-            query: ctx.request.query,
+            query: ctx.request?.query,
           }
         : omit(ctx.response?.body as any, ["jwt", "refreshToken", "token"]);
 
