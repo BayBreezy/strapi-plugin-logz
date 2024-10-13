@@ -18,7 +18,7 @@ export default {
       attributes: {
         action: {
           configurable: false,
-          type: "string",
+          type: "text",
           required: false,
         },
         method: {
@@ -27,7 +27,7 @@ export default {
           configurable: false,
         },
         url: {
-          type: "string",
+          type: "text",
           configurable: false,
         },
         statusCode: {
