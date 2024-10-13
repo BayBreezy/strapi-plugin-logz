@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.0.3
+
+[compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Make action & url of type text ([46cfc1a](https://github.com/BayBreezy/strapi-plugin-logz/commit/46cfc1a))
+- Update how state route is checked for values ([e320d62](https://github.com/BayBreezy/strapi-plugin-logz/commit/e320d62))
+
+### 🏡 Chore
+
+- **release:** V0.0.2 ([b8be0fd](https://github.com/BayBreezy/strapi-plugin-logz/commit/b8be0fd))
+- Bump deps ([51dacfc](https://github.com/BayBreezy/strapi-plugin-logz/commit/51dacfc))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.2
 
 [compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.1...v0.0.2)
