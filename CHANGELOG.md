@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.0.5
+
+[compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Check if `ctx.state.route` exist while checking if the route has params ([475167c](https://github.com/BayBreezy/strapi-plugin-logz/commit/475167c))
+
+### 🏡 Chore
+
+- **release:** V0.0.4 ([be95f68](https://github.com/BayBreezy/strapi-plugin-logz/commit/be95f68))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.4
 
 [compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.3...v0.0.4)
