@@ -14,10 +14,10 @@ function getFetchParams(params = {}): any {
 const pluginUID = `plugin::${config.pluginName}.${config.pluginName}`;
 
 const isLoginRoute = (ctx: any) => {
-  return ctx.state.route.path === "/auth/local";
+  return ctx.state?.route ? ctx?.state?.route?.path === "/auth/local" : false;
 };
 const isRegisterRoute = (ctx: any) => {
-  return ctx.state.route.path === "/auth/local/register";
+  return ctx.state?.route ? ctx?.state?.route?.path === "/auth/local/register" : false;
 };
 const service = ({ strapi }: { strapi: Core.Strapi }) => ({
   /**
@@ -46,7 +46,7 @@ const service = ({ strapi }: { strapi: Core.Strapi }) => ({
     // get the method, url, status from the context
     const { method, url, status } = ctx;
     // get the user if it exists
-    const user = ctx.state.user ? ctx.state.user.id : null;
+    const user = ctx.state?.user ? ctx.state.user.id : null;
     // get the api name from the route info
     const apiName = startCase(
       replace(ctx.state?.route?.info?.apiName || ctx.state?.route?.info?.pluginName, "-", " ")
