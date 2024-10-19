@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.0.4
+
+[compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.3...v0.0.4)
+
+### 🩹 Fixes
+
+- Check if `ctx.state.route` is there before trying to get values from it ([a6d039d](https://github.com/BayBreezy/strapi-plugin-logz/commit/a6d039d))
+
+### 🏡 Chore
+
+- Bump deps ([fb9ac4e](https://github.com/BayBreezy/strapi-plugin-logz/commit/fb9ac4e))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.3
 
 [compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.2...v0.0.3)
