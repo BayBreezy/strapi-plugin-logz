@@ -81,7 +81,7 @@ const service = ({ strapi }: { strapi: Core.Strapi }) => ({
     }
     // check if the route has params
     // if not, it's a find all request. We do not want to store the data in the log as it could get really large
-    const hasParams = ctx.state.route.path.includes(":");
+    const hasParams = ctx?.state?.route?.path ? ctx.state.route.path.includes(":") : false;
 
     // set the data based on if a get request was made
     let data =
