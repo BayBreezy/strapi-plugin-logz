@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-logz",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Automatically capture and record the API calls made to your Strapi application",
   "keywords": [
     "strapi",

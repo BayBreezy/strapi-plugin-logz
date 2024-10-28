@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.6
+
+[compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.5...v0.0.6)
+
+### 🏡 Chore
+
+- Bump deps ([a10fc3f](https://github.com/BayBreezy/strapi-plugin-logz/commit/a10fc3f))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.5
 
 [compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.4...v0.0.5)
