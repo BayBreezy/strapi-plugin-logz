@@ -40,6 +40,7 @@
     "dist"
   ],
   "scripts": {
+    "afterClone": "rm -rf dist node_modules package-lock.json && npm install",
     "build": "strapi-plugin build",
     "format": "npx prettier --write .",
     "format:check": "npx prettier -c .",
@@ -58,7 +59,7 @@
     "defu": "^6.1.4",
     "file-saver": "^2.0.5",
     "json-2-csv": "^5.5.6",
-    "react-intl": "^6.8.0",
+    "react-intl": "^6.8.4",
     "recharts": "^2.13.0",
     "yup": "^1.4.0"
   },
@@ -66,10 +67,10 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@iconify/react": "^5.0.2",
     "@strapi/sdk-plugin": "^5.2.7",
-    "@strapi/strapi": "^5.1.0",
-    "@strapi/typescript-utils": "^5.1.0",
+    "@strapi/strapi": "^5.1.1",
+    "@strapi/typescript-utils": "^5.1.1",
     "@types/file-saver": "^2.0.7",
-    "@types/react": "^18.3.11",
+    "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/styled-components": "^5.1.34",
     "changelogen": "^0.5.7",
