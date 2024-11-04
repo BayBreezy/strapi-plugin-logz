@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.7
+
+[compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.6...v0.0.7)
+
+### 🏡 Chore
+
+- **release:** V0.0.6 ([b28c1da](https://github.com/BayBreezy/strapi-plugin-logz/commit/b28c1da))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.6
 
 [compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.5...v0.0.6)
