@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.0.8
+
+[compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.7...v0.0.8)
+
+### 🏡 Chore
+
+- **deps-dev:** Bump @ianvs/prettier-plugin-sort-imports ([eb0cb32](https://github.com/BayBreezy/strapi-plugin-logz/commit/eb0cb32))
+- **deps-dev:** Bump react-router-dom from 6.27.0 to 6.28.0 ([9c9c12a](https://github.com/BayBreezy/strapi-plugin-logz/commit/9c9c12a))
+- **deps-dev:** Bump @strapi/typescript-utils from 5.2.0 to 5.3.0 ([724b588](https://github.com/BayBreezy/strapi-plugin-logz/commit/724b588))
+- **deps-dev:** Bump @strapi/strapi from 5.2.0 to 5.4.0 ([a0e733b](https://github.com/BayBreezy/strapi-plugin-logz/commit/a0e733b))
+- **deps-dev:** Bump @strapi/typescript-utils from 5.3.0 to 5.4.0 ([f3e8683](https://github.com/BayBreezy/strapi-plugin-logz/commit/f3e8683))
+- Bump deps ([5fac8cf](https://github.com/BayBreezy/strapi-plugin-logz/commit/5fac8cf))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.7
 
 [compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.6...v0.0.7)
