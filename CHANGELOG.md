@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.0.9
+
+[compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.8...v0.0.9)
+
+### 🏡 Chore
+
+- **release:** V0.0.8 ([fc5f3f1](https://github.com/BayBreezy/strapi-plugin-logz/commit/fc5f3f1))
+- Update dependabot config ([1e9fc62](https://github.com/BayBreezy/strapi-plugin-logz/commit/1e9fc62))
+- Bump deps ([0d89dcf](https://github.com/BayBreezy/strapi-plugin-logz/commit/0d89dcf))
+
+### ❤️ Contributors
+
+- Behon Baker ([@BayBreezy](http://github.com/BayBreezy))
+
 ## v0.0.8
 
 [compare changes](https://github.com/BayBreezy/strapi-plugin-logz/compare/v0.0.7...v0.0.8)
